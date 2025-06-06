@@ -1,13 +1,13 @@
 # Matrix Multiply Library
 
-A simple Python library for matrix multiplication supporting matrices of different dimensions.
+A Python library for matrix multiplication supporting matrices of different dimensions.
 
 ## Installation
 
 ```bash
-pip install matrix-multiply-yourname
+pip install matrix-multiply-lib
 
-#Usage
+##Usage
 
 from matrix_multiply import Matrix, matrix_multiply
 
