@@ -6,19 +6,22 @@ A Python library for matrix multiplication supporting matrices of different dime
 
 ```bash
 pip install matrix-multiply-lib
-
+```
 ##Usage
 
 from matrix_multiply import Matrix, matrix_multiply
 
 # Create matrices
+```bash
 matrix_a = Matrix([[1, 2], [3, 4]])
 matrix_b = Matrix([[5, 6], [7, 8]])
 
 # Method 1: Using Matrix class
+```bash
 result = matrix_a * matrix_b
 print(result)
 
 # Method 2: Using convenience function
+```bash
 result = matrix_multiply([[1, 2], [3, 4]], [[5, 6], [7, 8]])
 print(result)
