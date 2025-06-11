@@ -14,6 +14,7 @@ class Matrix:
         self.data = data
         self.rows = len(data)
         self.cols = len(data[0])
+    
     def multiply(self, other):
         """Multiply this matrix with another matrix"""
         if not isinstance(other, Matrix):
@@ -33,14 +34,14 @@ class Matrix:
         
         return Matrix(result)
     
-    def _mul_(self, other):
+    def __mul__(self, other):
         """Allow using * operator for multiplication"""
         return self.multiply(other)
     
-    def _str_(self):
+    def __str__(self):
         return '\n'.join([' '.join(map(str, row)) for row in self.data])
     
-    def _repr_(self):
+    def __repr__(self):
         return f"Matrix({self.data})"
 
 def matrix_multiply(matrix_a, matrix_b):
