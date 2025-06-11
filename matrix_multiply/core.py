@@ -33,3 +33,14 @@ class Matrix:
         
         return Matrix(result)
     
+    def _mul_(self, other):
+        """Allow using * operator for multiplication"""
+        return self.multiply(other)
+    
+    def _str_(self):
+        return '\n'.join([' '.join(map(str, row)) for row in self.data])
+    
+    def _repr_(self):
+        return f"Matrix({self.data})"
+
+    
